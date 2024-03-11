@@ -62,6 +62,9 @@ body{
     border-radius: 10px;
     border: 1px solid white;
 }
+.cv ul{
+   height: 85px;
+}
 .aboutMe{
     display: flex;
     flex-direction: column;
@@ -73,6 +76,9 @@ body{
     background: #335C81;
     border-radius: 10px;
     border: 1px solid white;
+}
+.aboutMe p{
+    height: 50px;
 }
 .contact{
     display: flex;
