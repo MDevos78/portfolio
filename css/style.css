@@ -163,6 +163,54 @@ h3{
 .works h3{
     margin-bottom: 5px;
 }
+/* Le Modal */
+.modal {
+    display: none; /* Par défaut, caché */
+    position: fixed;
+    z-index: 1; /* Au-dessus de tout */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0); /* Fond sombre */
+    background-color: rgba(0,0,0,0.9); /* Transparence */
+    padding-top: 60px;
+}
+
+/* L'image du modal */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 90%;
+    max-width: 900px;
+}
+
+/* Le texte du modal */
+#caption {
+    text-align: center;
+    color: #ccc;
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+/* Le bouton pour fermer le modal */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
 @media screen and (max-width:1020px) {
     body{
         margin: auto;

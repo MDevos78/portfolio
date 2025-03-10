@@ -63,27 +63,37 @@
             <span class="worksLeft">
                 <h3>Travaux</h3>
                 <span class="mint">
-                    <a href="https://devos.alwaysdata.net/"><img class="mintImg" src="assets/images/Capture d'écran 2023-10-08 223801.png" alt="Site mint"/></a>
+                    <a href="https://devos.alwaysdata.net/">
+                        <img class="mintImg" src="assets/images/Capture d'écran 2023-10-08 223801.png" alt="Site mint" />
+                    </a>
                     <p>Premier site, il s'agit d'un TP effectué lors de ma formation. Effectué en html et css.</p>
                 </span>
                 <span class="trainingProgress">
-                    <img class="trainingProgressImg" src="assets/images/Capture d'écran 2023-10-08 224126.png" alt="Site training progress"/></a>
-                    <p>Application que j'ai créer pour enregistrer mes sessions d'entraînements. Effectué grâce à vue.js, python postresql et docker.</p>
+                    <img class="trainingProgressImg" src="assets/images/Capture d'écran 2023-10-08 224126.png" alt="Site training progress" onclick="openModal(this.src, this.alt)">
+                    <p>Application que j'ai créée pour enregistrer mes sessions d'entraînements. Effectué grâce à vue.js, python postgresql et docker.</p>
                 </span>
             </span>
+            
             <span class="worksRight">
                 <span class="sedExtract">
-                    <img class="sedExtractImg" src="assets/images/Capture d'écran 2023-10-12 085432.png" alt="site sed-extractor">
+                    <img class="sedExtractImg" src="assets/images/Capture d'écran 2023-10-12 085432.png" alt="site sed-extractor" onclick="openModal(this.src, this.alt)">
                     <p>Site réalisé pendant mon stage à l'IRAP en vue.js et python (pas encore déployé)</p>
                 </span>
                 <span class="blocNote">
-                    <img class="blocNoteImg" src="assets/images/Capture d'écran 2023-10-09 220230.png" alt="Bloc Note">
+                    <img class="blocNoteImg" src="assets/images/Capture d'écran 2023-10-09 220230.png" alt="Bloc Note" onclick="openModal(this.src, this.alt)">
                     <p>Bloc note réalisé grâce à un tuto sur internet en html, css et javascript.</p>
                 </span>
             </span>
+            <!-- Modal -->
+            <div id="imageModal" class="modal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <img class="modal-content" id="imgModal">
+                <div id="caption"></div>
+            </div>
         </div>
     </div>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> 
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="/js/app.js"></script>
 </body>
 </html>
