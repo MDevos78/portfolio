@@ -73,6 +73,9 @@ body{
 .cv ul{
    height: 85px;
 }
+.aboutMe p{
+    margin-bottom: 0;
+}
 h3{
     height: 15px;
 }
